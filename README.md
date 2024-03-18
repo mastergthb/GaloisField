@@ -1,1 +1,4 @@
-# GaloisField
+для запуска программы необходим python версии 3.7 или выше
+для запуска скрипта part2.py в консоли:
+cd -> путь к расположению файла
+python part2.py filename.(json|yaml)
