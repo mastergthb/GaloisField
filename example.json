@@ -1,0 +1,70 @@
+[
+    {
+        "p": 2,
+        "n": 3,
+        "elem1": 5,
+        "elem2": 3,
+        "operation": "*"
+    },
+    {
+        "polynomial": [
+            1,
+            0,
+            1,
+            1
+        ],
+        "elem1": 5,
+        "elem2": 3,
+        "operation": "*"
+    },
+    {
+        "p": 2,
+        "n": 7,
+        "elem1": 4,
+        "elem2": 3,
+        "operation": "/"
+    },
+    {
+        "p": 11,
+        "n": 3,
+        "elem1": 11,
+        "elem2": 402,
+        "operation": "+"
+    },
+    {
+        "polynomial": [
+            1,
+            0,
+            1,
+            1
+        ],
+        "elem1": 5,
+        "elem2": 3,
+        "operation": "/"
+    },
+    {
+        "p": 2,
+        "n": 3,
+        "elem1": 5,
+        "elem2": 3,
+        "operation": "/"
+    },
+    {
+        "p": 2,
+        "n": 7,
+        "elem1": 2,
+        "elem2": 3,
+        "operation": "^"
+    },
+    {
+        "polynomial": [
+            1,
+            0,
+            1,
+            1
+        ],
+        "elem1": 5,
+        "elem2": 5,
+        "operation": "^"
+    }
+]
