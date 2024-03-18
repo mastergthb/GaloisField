@@ -75,3 +75,7 @@ class GaloisField(GaloisFieldPoly):
     def __ne__(self, other):
         return not self.__eq__(other)
     
+    def __str__(self):
+        elements = ', '.join(str(element) for element in self.field)
+        return f"Elements of Galois Field GF({self._p}^{self._n}): [{elements}]"
+   
