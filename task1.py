@@ -95,3 +95,17 @@ class GaloisField(GaloisFieldPoly):
     @n.setter
     def n(self, value):
         self._n = value
+
+def __power__(self, elem1,power):
+        """"реализовываем метод для возведения в степень, используя умножение в полиномиальной форме
+        закомментированный блок кода - то, как должна работать функция через умножение в полиномах
+        но тк умножение через полиномы не работает в поле p**n, просто вернем elem1 ** power % p**n
+        математически верную реализацию смотри в полиномиальной презентации"""
+        # self.validate_element(elem1)
+        # power = self.power(elem1,power)
+        #return power
+        self.validate_element(elem1)
+        if power < 0:
+            raise ValueError("Степень должна быть положительной")
+        return (elem1 ** power) % self.size
+    
