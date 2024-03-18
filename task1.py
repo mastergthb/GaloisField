@@ -108,4 +108,22 @@ def __power__(self, elem1,power):
         if power < 0:
             raise ValueError("Степень должна быть положительной")
         return (elem1 ** power) % self.size
-    
+
+def extended_gcd(self, a, b):
+        """расширенный алгоритм евклида"""
+        if a == 0:
+            return b, 0, 1
+        else:
+            gcd, x, y = self.extended_gcd(b % a, a)
+            return gcd, y - (b // a) * x, x
+        
+def multiplicative_inverse(self, element):
+    """поиск обратного элемента в поле через расширенный алгоритм евклида
+    !!!не удалось получить правильное представление обратного числа в общем случае 
+    для поля p**n, или поля, заданного полиномом(скорее всего нужно было реализовать расширенный алгоритм
+    евклида для двух полиномов), поэтому __div__ возвращает математически
+    неверное значение"""
+    gcd, x, y = self.extended_gcd(element,self.size)
+    if gcd != 1:
+        raise ValueError("Обратный элемент не существует")
+    return x % self.size
