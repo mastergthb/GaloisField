@@ -68,3 +68,10 @@ class GaloisField(GaloisFieldPoly):
             raise ZeroDivisionError("Делениен на 0")
         ele2_inv = self.multiplicative_inverse(elem2)
         return (elem1 * ele2_inv) % self.size
+    
+    def __eq__(self, other):
+        return self._p == other._p and self._n == other._n    
+    
+    def __ne__(self, other):
+        return not self.__eq__(other)
+    
