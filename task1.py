@@ -78,4 +78,20 @@ class GaloisField(GaloisFieldPoly):
     def __str__(self):
         elements = ', '.join(str(element) for element in self.field)
         return f"Elements of Galois Field GF({self._p}^{self._n}): [{elements}]"
-   
+    
+    """"доступ к значениям p и n"""
+    @property
+    def p(self):
+        return self._p
+    
+    @p.setter
+    def p(self, value):
+        self._p = value
+    
+    @property
+    def n(self):
+        return self._n
+    
+    @n.setter
+    def n(self, value):
+        self._n = value
