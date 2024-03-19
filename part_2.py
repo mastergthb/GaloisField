@@ -1,5 +1,5 @@
 import argparse 
-from part_1_task_7 import GaloisField
+from task1 import GaloisField
 from part_1_task_8 import GaloisFieldPoly
 import json
 import yaml
